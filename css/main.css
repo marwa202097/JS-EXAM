@@ -1,0 +1,171 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboto',sans-serif;
+  border:none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: all .2s linear;
+}   
+#loading{
+  position: fixed;
+  inset: 0;
+  background-color: #09c;
+  z-index: 9999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root{
+  --gray:#f8f6f6 ;
+  --black:#0d0d0d;
+}
+
+  /* html{
+    scroll-behavior: smooth;
+  } */
+body{
+    background-color: var(--black);
+    overflow: hidden;
+  }
+
+  /* ******************************************top button************************************* */
+  #topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+/*    ***************************************START SIDE BAR**************************************/
+  .header-navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    z-index: 55555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.logo{    padding: 25px 0;}
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu i{
+  cursor: pointer;
+}
+.social-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 11;
+}
+.sideBar-menu{
+  position: fixed;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 5555;
+    background-color: #000;
+}
+.sideBar-menu ul{
+  list-style-type: none;
+  padding-left: 30px;
+  height: 300px;
+  overflow: hidden;
+}
+.sideBar-menu ul a{
+  color: #f9f6f6;
+  font-weight: 500;
+  font-size: 16px;
+}
+.sideBar-menu ul a:hover{
+  color: #dc3545;
+}
+.social-icons{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.social-icons a{
+  color: #f9f6f6;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.social-icons a:hover{
+  color: #dc3545;
+  font-size: 30px;
+}
+/*    ***************************************END SIDE BAR**************************************/
+
+
+  /* ***************************Start Contact Section************************ */
+.contactTitle{
+    color: var(--gray);
+    font-size: 2rem;
+}
+.form{
+    margin-bottom: 1rem;
+}
+.form-control {
+   background: transparent !important;
+   border: none;
+   border-bottom: 1px solid rgba(255,255,255,0.7) !important;
+   border-radius: 0;
+   font-weight: 400;
+   color: white;
+}
+#submitBtn{
+    border: 1px solid #dc3545 !important;
+}
+  /* ***************************End Contact Section************************ */
+ 
+  /* ***************************Start HOME Section************************ */
+ 
+  .images{
+    position: relative;
+    overflow: hidden;
+  }
+  .images .img-layer{
+    position: absolute;
+   left: 0;
+   right: 0;
+   top: 100%;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    transition: all 2s !important;
+   font-size: 16px;
+   opacity: 0 ;
+  }
+  .images:hover .img-layer{
+   opacity: 1!important;
+    inset: 0; }
+      /* ***************************END HOME Section************************ */
+.home{
+position: relative;
+  }
+.sideBar{
+  background-color: var(--gray);
+  width: fit-content;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.links{
+ display: flex;
+}
+.links a{
+  float: left;
+  display: block;
+}
